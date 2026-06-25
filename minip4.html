@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+
+    <link rel="stylesheet" href="minip4.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <p class="title">DevDetective</p>
+
+            <div class="mode-container">
+                <p data-screenMode>DARK</p>
+                <img data-modeIcon src="moon.png" alt="mode icon">
+           </div>
+
+       </div>
+
+        <!-- Search Section -->
+        <div class="data-search">
+
+            <input
+                type="text"
+                placeholder="Enter a GitHub username"
+                data-searchInput
+            >
+
+            <button data-searchBtn>
+                Search
+            </button>
+        </div>
+
+
+         <div class="loading-container">
+
+                <img
+                    src="icons8-loading.gif"
+                    alt="loading gif"
+                    width="150"
+                    height="150"
+                >
+
+                <p>Loading...</p>
+
+         </div>
+
+
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- User Top Info -->
+            <div class="user-details">
+
+                <img data-userImg src="" alt=" user image" class="avatar">
+
+                <div class="profile-info">
+
+                    <div class="name-date">
+
+                        <div>
+                            <h2 data-userName>User Name</h2>
+
+                            <a
+                                data-userLink
+                                href="#"
+                                target="_blank"
+                            >
+                                 @username
+                            </a>
+                        </div>
+
+                        <p data-userJoinDate>
+                        </p>
+
+                    </div>
+
+                    <div class="bio">
+                        <p data-content></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Repo Stats -->
+            <div class="user-details2">
+
+                <div class="stat-box">
+                    <p>Repos</p>
+                    <h3 data-Repos>0</h3>
+                </div>
+
+                <div class="stat-box">
+                    <p>Followers</p>
+                    <h3 data-Followers>0</h3>
+                </div>
+
+                <div class="stat-box">
+                    <p>Following</p>
+                    <h3 data-Following>0</h3>
+                </div>
+
+            </div>
+
+            <!-- Extra Details -->
+            <div class="user-details3">
+
+                <div class="info-box">
+
+                    <img src="icons8-location-48.png" alt="">
+                    <p data-userLocation>location</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <img src="icons8-twitter-bird-48.png" alt="">
+
+                    <a
+                        data-userTwitter
+                        href="#"
+                        target="_blank"
+                    >
+                        Twitter
+                    </a>
+
+                </div>
+
+                <div class="info-box">
+
+                    <img src="icons8-link-64.png" alt="">
+
+                    <a
+                        data-userGitLink
+                        href="#"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
+                <div class="info-box">
+
+                    <img src="icons8-building-24.png" alt="">
+
+                    <a
+                        data-userCompany
+                        href="#"
+                        target="_blank"
+                    >
+                        Company
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+      <script src="minip4.js"></script>
+</body>
+</html>
